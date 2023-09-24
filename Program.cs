@@ -86,7 +86,7 @@ class Program
         Console.WriteLine("Square Root");
         Console.WriteLine("Elapsed Time = " + timer.ElapsedMilliseconds + " ms " + timer.ElapsedTicks + " ticks\n");
         timer.Restart();
-
+        
         //Timing between Sin, Cos, and quintic Taylor Series
         double anglenumber;
         double AngleGenerated;
