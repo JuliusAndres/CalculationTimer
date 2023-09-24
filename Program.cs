@@ -80,6 +80,13 @@ class Program
         Console.WriteLine("Muliplication and Power Ratio = " + MultSquareTicks/PowSquareTicks + "\n");
         timer.Restart();
 
+        timer.Start();
+        SqrtRootNumbers(squarenumbers, n);
+        timer.Stop();
+        Console.WriteLine("Square Root");
+        Console.WriteLine("Elapsed Time = " + timer.ElapsedMilliseconds + " ms " + timer.ElapsedTicks + " ticks\n");
+        timer.Restart();
+
         //Timing between Sin, Cos, and quintic Taylor Series
         double anglenumber;
         double AngleGenerated;
@@ -195,6 +202,14 @@ static void PowerNumbers(double[,] nums, int count)
         for(i=0; i<count; ++i)
         {
             nums[i,1] = Math.Pow(nums[i,0], 2);
+        }
+    }
+static void SqrtRootNumbers(double[,] nums, int count)
+    {
+        int i;
+        for(i=0; i<count; ++i)
+        {
+            nums[i,1] = Math.Sqrt(nums[i,0]);
         }
     }
 //functions for Sin, Cos, and Exp operations
