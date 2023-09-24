@@ -211,7 +211,7 @@ static double CosNumbers(double nums)
 static double TaylorSeriesNum(double nums)
     {
         double anglenum;
-        anglenum = nums - (1/6)*(Math.Pow(nums, 3)) + (1/120)*(Math.Pow(nums, 5));
+        anglenum = nums - (0.167)*(Math.Pow(nums, 3)) + (0.0083)*(Math.Pow(nums, 5));
         return anglenum;
     }
 }
